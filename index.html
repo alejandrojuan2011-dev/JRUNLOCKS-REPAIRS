@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Catálogo de monitores gaming de 144 Hz con modelos Full HD y QHD." />
+  <title>Gaming Monitor Store | Catálogo 144 Hz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio">
+      <span class="brand-mark">G</span>
+      <span><strong>Gaming</strong> Monitor Store</span>
+    </a>
+    <nav>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#ventajas">Ventajas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button class="menu-button" aria-label="Abrir menú">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <span class="eyebrow">MONITORES GAMING 144 HZ</span>
+        <h1>Velocidad, precisión y una imagen que domina cada partida.</h1>
+        <p>Descubre monitores de 24 a 32 pulgadas, paneles IPS y VA, resolución Full HD y QHD, tiempos de respuesta de hasta 1 ms y tecnología Adaptive-Sync.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#catalogo">Ver catálogo</a>
+          <a class="button secondary" href="#contacto">Solicitar cotización</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>144 Hz</strong><span>Movimiento fluido</span></div>
+          <div><strong>1 ms</strong><span>Respuesta rápida</span></div>
+          <div><strong>QHD</strong><span>Mayor definición</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <img src="assets/images/hero-monitor.svg" alt="Monitor gaming de 144 Hz con iluminación neón" />
+      </div>
+    </section>
+
+    <section class="catalog-section" id="catalogo">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow">CATÁLOGO</span>
+          <h2>Escoge tu próximo monitor</h2>
+        </div>
+        <p>Precios demostrativos. Puedes editarlos fácilmente en el archivo <code>assets/script.js</code>.</p>
+      </div>
+
+      <div class="filters" aria-label="Filtros del catálogo">
+        <button class="filter active" data-filter="all">Todos</button>
+        <button class="filter" data-filter="24">24 pulgadas</button>
+        <button class="filter" data-filter="27">27 pulgadas</button>
+        <button class="filter" data-filter="32">32 pulgadas</button>
+        <button class="filter" data-filter="qhd">QHD</button>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="benefits" id="ventajas">
+      <div class="section-heading centered">
+        <span class="eyebrow">POR QUÉ 144 HZ</span>
+        <h2>Diseñados para jugar mejor</h2>
+      </div>
+      <div class="benefit-grid">
+        <article>
+          <span class="benefit-icon">⚡</span>
+          <h3>Mayor fluidez</h3>
+          <p>Hasta 144 imágenes por segundo para desplazamientos más suaves y mejor seguimiento del objetivo.</p>
+        </article>
+        <article>
+          <span class="benefit-icon">🎯</span>
+          <h3>Respuesta rápida</h3>
+          <p>Tiempos de respuesta bajos que ayudan a reducir el desenfoque en escenas de acción.</p>
+        </article>
+        <article>
+          <span class="benefit-icon">🛡️</span>
+          <h3>Adaptive-Sync</h3>
+          <p>Sincronización entre la tarjeta gráfica y el monitor para reducir cortes de imagen.</p>
+        </article>
+        <article>
+          <span class="benefit-icon">🌈</span>
+          <h3>Color y contraste</h3>
+          <p>Opciones IPS para colores consistentes y VA para negros más profundos.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contacto">
+      <div>
+        <span class="eyebrow">ORDENA HOY</span>
+        <h2>¿Cuál monitor combina con tu PC?</h2>
+        <p>Selecciona un producto y envía la solicitud por WhatsApp. Recuerda cambiar el número en <code>assets/script.js</code>.</p>
+      </div>
+      <a class="button primary large" id="generalWhatsapp" href="#" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="brand footer-brand"><span class="brand-mark">G</span><span><strong>Gaming</strong> Monitor Store</span></div>
+    <p>© <span id="year"></span> Catálogo de monitores gaming. Diseño listo para GitHub Pages.</p>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
